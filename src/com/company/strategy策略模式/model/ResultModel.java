@@ -39,6 +39,7 @@ public class ResultModel {
      */
     public ResultModel() {
     }
+
     /*
      * 有参构造器
      */
@@ -46,12 +47,14 @@ public class ResultModel {
         this.ret_code = ret_code;
         this.ret_msg = ret_msg;
     }
+
     /*
      * 有参构造器
      */
     public ResultModel(ErrorCode errorCode) {
         this.ret_code = errorCode.getCode();
         this.ret_msg = errorCode.getMsg();
+        this.status = errorCode.getStatus();
     }
 
     public String getRet_code() {

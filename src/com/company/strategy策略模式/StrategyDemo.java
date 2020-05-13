@@ -1,5 +1,6 @@
 package com.company.strategy策略模式;
 
+import com.company.strategy策略模式.dealEnum.ErrorCode;
 import com.company.strategy策略模式.definedException.DataCheckException;
 import com.company.strategy策略模式.model.PayModel;
 import com.company.strategy策略模式.model.RealTimePayModel;
@@ -30,7 +31,7 @@ public class StrategyDemo {
         System.out.println("查看检查结果：返回码-"+ret.getRet_code()+",返回信息-"+ret.getRet_msg());
         //调用处理流程
         ret = ps.deal(model);
-        System.out.println("看看走的是哪个通道："+ret.getRet_msg());
+        System.out.println("看看走的是哪个通道："+ret.getRet_msg()+",交易状态为："+ret.getStatus());
 
 
 
@@ -50,9 +51,9 @@ public class StrategyDemo {
             //检查是否为空
             DataCheck.checkEmpty("channelNo",realModel.getChannelNo());
         }catch (DataCheckException e){
-            return new ResultModel(e.getRet_code(),e.getMessage());
+            return new ResultModel(e.getCode(),e.getMsg());
         }
-        return new ResultModel("000000","检查通过");
+        return new ResultModel(ErrorCode.ERROR_CODE_000000);
     }
 
 }

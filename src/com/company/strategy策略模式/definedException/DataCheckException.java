@@ -1,24 +1,49 @@
 package com.company.strategy策略模式.definedException;
 
+import com.company.strategy策略模式.dealEnum.ErrorCode;
+import com.company.strategy策略模式.dealEnum.StatusEnum;
+
+
 public class DataCheckException extends Exception {
     static final long serialVersionUID = -3387516993124229948L;
 
-    String ret_code = "000001";
+    private String code;
+    private String msg;
+    private StatusEnum status;
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+
+    public StatusEnum getStatus() {
+        return status;
+    }
+
+    public void setStatus(StatusEnum status) {
+        this.status = status;
+    }
+
 
     public DataCheckException() {
         super();
     }
 
-    public String getRet_code() {
-        return ret_code;
-    }
-
-    public void setRet_code(String ret_code) {
-        this.ret_code = ret_code;
-    }
-
     public DataCheckException(String message) {
-        super(message);
+        this.code = ErrorCode.ERROR_CODE_LT0001.getCode();
+        this.msg = ErrorCode.ERROR_CODE_LT0001.getMsg() + ":" + message;
+        this.status = ErrorCode.ERROR_CODE_LT0001.getStatus();
     }
 
     public DataCheckException(String message, Throwable cause) {

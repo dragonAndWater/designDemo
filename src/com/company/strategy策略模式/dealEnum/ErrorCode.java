@@ -43,6 +43,14 @@ public enum ErrorCode {
         this.msg = msg;
     }
 
+    public StatusEnum getStatus() {
+        return status;
+    }
+
+    public void setStatus(StatusEnum status) {
+        this.status = status;
+    }
+
     ErrorCode(String code, String msg, StatusEnum status) {
         this.code = code;
         this.msg = msg;

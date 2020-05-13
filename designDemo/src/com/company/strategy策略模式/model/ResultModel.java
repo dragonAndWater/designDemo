@@ -1,0 +1,106 @@
+package com.company.strategy策略模式.model;
+
+/**
+ * @Author longtao
+ * @Date 2020/5/13
+ * @Describe 处理结果Model
+ **/
+public class ResultModel {
+    /*
+     * 交易返回码
+     */
+    String ret_code;
+    /*
+     * 交易返回信息
+     */
+    String ret_msg;
+    /*
+     * 交易状态
+     */
+    String status;
+    /*
+     * 平台流水号
+     */
+    String ref_no;
+    /*
+     * 上游渠道流水号
+     */
+    String channelNo;
+    /*
+     * 备注
+     */
+    String remark;
+
+    /*
+     * 无参构造器
+     */
+    public ResultModel() {
+    }
+    /*
+     * 有参构造器
+     */
+    public ResultModel(String ret_code, String ret_msg) {
+        this.ret_code = ret_code;
+        this.ret_msg = ret_msg;
+    }
+
+    public String getRet_code() {
+        return ret_code;
+    }
+
+    public void setRet_code(String ret_code) {
+        this.ret_code = ret_code;
+    }
+
+    public String getRet_msg() {
+        return ret_msg;
+    }
+
+    public void setRet_msg(String ret_msg) {
+        this.ret_msg = ret_msg;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getRef_no() {
+        return ref_no;
+    }
+
+    public void setRef_no(String ref_no) {
+        this.ref_no = ref_no;
+    }
+
+    public String getChannelNo() {
+        return channelNo;
+    }
+
+    public void setChannelNo(String channelNo) {
+        this.channelNo = channelNo;
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
+
+    @Override
+    public String toString() {
+        return "ResuleModel{" +
+                "ret_code='" + ret_code + '\'' +
+                ", ret_msg='" + ret_msg + '\'' +
+                ", status='" + status + '\'' +
+                ", ref_no='" + ref_no + '\'' +
+                ", channelNo='" + channelNo + '\'' +
+                ", remark='" + remark + '\'' +
+                '}';
+    }
+}

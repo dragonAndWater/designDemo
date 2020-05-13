@@ -9,19 +9,19 @@ public class PayModel {
     /*
      * 平台流水号
      */
-    String refNo;
+    private String refNo;
     /*
      * 上游渠道流水号
      */
-    String channelNo;
+    private String channelNo;
     /*
      * 通道号
      */
-    String pmcNo;
+    private String pmcNo;
     /*
      * 通道名
      */
-    String PmcName;
+    private String PmcName;
 
     public String getRefNo() {
         return refNo;

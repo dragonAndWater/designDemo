@@ -1,5 +1,8 @@
 package com.company.strategy策略模式.model;
 
+import com.company.strategy策略模式.dealEnum.ErrorCode;
+import com.company.strategy策略模式.dealEnum.StatusEnum;
+
 /**
  * @Author longtao
  * @Date 2020/5/13
@@ -9,27 +12,27 @@ public class ResultModel {
     /*
      * 交易返回码
      */
-    String ret_code;
+    private String ret_code;
     /*
      * 交易返回信息
      */
-    String ret_msg;
+    private String ret_msg;
     /*
      * 交易状态
      */
-    String status;
+    private StatusEnum status;
     /*
      * 平台流水号
      */
-    String ref_no;
+    private String ref_no;
     /*
      * 上游渠道流水号
      */
-    String channelNo;
+    private String channelNo;
     /*
      * 备注
      */
-    String remark;
+    private String remark;
 
     /*
      * 无参构造器
@@ -42,6 +45,13 @@ public class ResultModel {
     public ResultModel(String ret_code, String ret_msg) {
         this.ret_code = ret_code;
         this.ret_msg = ret_msg;
+    }
+    /*
+     * 有参构造器
+     */
+    public ResultModel(ErrorCode errorCode) {
+        this.ret_code = errorCode.getCode();
+        this.ret_msg = errorCode.getMsg();
     }
 
     public String getRet_code() {
@@ -60,11 +70,11 @@ public class ResultModel {
         this.ret_msg = ret_msg;
     }
 
-    public String getStatus() {
+    public StatusEnum getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(StatusEnum status) {
         this.status = status;
     }
 

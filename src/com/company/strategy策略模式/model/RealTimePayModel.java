@@ -11,27 +11,27 @@ public class RealTimePayModel extends PayModel {
     /*
      * 付款人账号
      */
-    String payerAcctNo;
+    private String payerAcctNo;
     /*
      * 付款人户名
      */
-    String payerAcctName;
+    private String payerAcctName;
     /*
      * 收款人账号
      */
-    String payeeAcctNo;
+    private String payeeAcctNo;
     /*
      * 收款人户名
      */
-    String payeeAcctName;
+    private String payeeAcctName;
     /*
      * 交易笔数
      */
-    String count;
+    private String count;
     /*
      * 交易金额
      */
-    BigDecimal amount;
+    private BigDecimal amount;
 
     public String getPayerAcctNo() {
         return payerAcctNo;
@@ -90,10 +90,6 @@ public class RealTimePayModel extends PayModel {
                 ", payeeAcctName='" + payeeAcctName + '\'' +
                 ", count='" + count + '\'' +
                 ", amount=" + amount +
-                ", refNo='" + refNo + '\'' +
-                ", channelNo='" + channelNo + '\'' +
-                ", pmcNo='" + pmcNo + '\'' +
-                ", PmcName='" + PmcName + '\'' +
                 '}';
     }
 }

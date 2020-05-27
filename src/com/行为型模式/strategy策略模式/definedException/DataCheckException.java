@@ -1,7 +1,7 @@
-package com.company.strategy策略模式.definedException;
+package com.行为型模式.strategy策略模式.definedException;
 
-import com.company.strategy策略模式.dealEnum.ErrorCode;
-import com.company.strategy策略模式.dealEnum.StatusEnum;
+import com.行为型模式.strategy策略模式.dealEnum.ErrorCode;
+import com.行为型模式.strategy策略模式.dealEnum.StatusEnum;
 
 
 public class DataCheckException extends Exception {

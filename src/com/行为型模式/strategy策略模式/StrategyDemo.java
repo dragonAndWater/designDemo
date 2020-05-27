@@ -1,12 +1,12 @@
-package com.company.strategy策略模式;
+package com.行为型模式.strategy策略模式;
 
-import com.company.strategy策略模式.dealEnum.ErrorCode;
-import com.company.strategy策略模式.definedException.DataCheckException;
-import com.company.strategy策略模式.model.PayModel;
-import com.company.strategy策略模式.model.RealTimePayModel;
-import com.company.strategy策略模式.model.ResultModel;
-import com.company.strategy策略模式.service.PayService;
-import com.company.strategy策略模式.util.DataCheck;
+import com.行为型模式.strategy策略模式.dealEnum.ErrorCode;
+import com.行为型模式.strategy策略模式.definedException.DataCheckException;
+import com.行为型模式.strategy策略模式.model.PayModel;
+import com.行为型模式.strategy策略模式.model.RealTimePayModel;
+import com.行为型模式.strategy策略模式.model.ResultModel;
+import com.行为型模式.strategy策略模式.service.PayService;
+import com.行为型模式.strategy策略模式.util.DataCheck;
 
 import java.math.BigDecimal;
 

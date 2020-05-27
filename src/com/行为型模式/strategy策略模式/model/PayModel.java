@@ -1,4 +1,4 @@
-package com.company.strategy策略模式.model;
+package com.行为型模式.strategy策略模式.model;
 
 /**
  * @Author longtao

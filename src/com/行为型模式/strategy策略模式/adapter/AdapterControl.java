@@ -1,9 +1,9 @@
-package com.company.strategy策略模式.adapter;
+package com.行为型模式.strategy策略模式.adapter;
 
 
-import com.company.strategy策略模式.model.PayModel;
-import com.company.strategy策略模式.model.ResultModel;
-import com.company.strategy策略模式.strategyPMC.StrategyDesignInterface;
+import com.行为型模式.strategy策略模式.model.PayModel;
+import com.行为型模式.strategy策略模式.model.ResultModel;
+import com.行为型模式.strategy策略模式.strategyPMC.StrategyDesignInterface;
 
 /**
  * @Author longtao
@@ -15,7 +15,7 @@ public class AdapterControl implements StrategyDesignInterface {
     public static AdapterControl getAdapter(String pmcNo){
         AdapterControl adapter = new AdapterControl();
         try {
-            Class<?> reflect = Class.forName("com.company.strategy策略模式.adapter."+pmcNo+"PMCAdapter");
+            Class<?> reflect = Class.forName("com.行为型模式.strategy策略模式.adapter."+pmcNo+"PMCAdapter");
             Object o = reflect.newInstance();
             adapter = (AdapterControl) o;
         } catch (Exception e) {

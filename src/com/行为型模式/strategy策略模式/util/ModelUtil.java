@@ -1,9 +1,6 @@
-package com.company.strategy策略模式.util;
-
-import com.company.strategy策略模式.model.RealTimePayModel;
+package com.行为型模式.strategy策略模式.util;
 
 import java.lang.reflect.Field;
-import java.math.BigDecimal;
 
 public class ModelUtil {
     /**

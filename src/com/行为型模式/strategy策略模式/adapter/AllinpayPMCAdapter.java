@@ -1,9 +1,9 @@
-package com.company.strategy策略模式.adapter;
+package com.行为型模式.strategy策略模式.adapter;
 
-import com.company.strategy策略模式.dealEnum.ErrorCode;
-import com.company.strategy策略模式.model.PayModel;
-import com.company.strategy策略模式.model.ResultModel;
-import com.company.strategy策略模式.strategyPMC.StrategyDesignInterface;
+import com.行为型模式.strategy策略模式.dealEnum.ErrorCode;
+import com.行为型模式.strategy策略模式.model.PayModel;
+import com.行为型模式.strategy策略模式.model.ResultModel;
+import com.行为型模式.strategy策略模式.strategyPMC.StrategyDesignInterface;
 
 public class AllinpayPMCAdapter extends AdapterControl implements StrategyDesignInterface {
     @Override

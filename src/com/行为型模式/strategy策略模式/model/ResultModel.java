@@ -1,7 +1,7 @@
-package com.company.strategy策略模式.model;
+package com.行为型模式.strategy策略模式.model;
 
-import com.company.strategy策略模式.dealEnum.ErrorCode;
-import com.company.strategy策略模式.dealEnum.StatusEnum;
+import com.行为型模式.strategy策略模式.dealEnum.ErrorCode;
+import com.行为型模式.strategy策略模式.dealEnum.StatusEnum;
 
 /**
  * @Author longtao

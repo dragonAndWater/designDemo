@@ -1,7 +1,7 @@
-package com.company.strategy策略模式.strategyPMC;
+package com.行为型模式.strategy策略模式.strategyPMC;
 
-import com.company.strategy策略模式.model.PayModel;
-import com.company.strategy策略模式.model.ResultModel;
+import com.行为型模式.strategy策略模式.model.PayModel;
+import com.行为型模式.strategy策略模式.model.ResultModel;
 
 /**
  * @Author longtao

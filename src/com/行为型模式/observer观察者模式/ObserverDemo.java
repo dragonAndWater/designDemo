@@ -1,8 +1,8 @@
-package com.结构型模式.observer观察者模式;
+package com.行为型模式.observer观察者模式;
 
-import com.结构型模式.observer观察者模式.observer.ObserverA;
-import com.结构型模式.observer观察者模式.observer.ObserverB;
-import com.结构型模式.observer观察者模式.observer.ObserverC;
+import com.行为型模式.observer观察者模式.observer.ObserverA;
+import com.行为型模式.observer观察者模式.observer.ObserverB;
+import com.行为型模式.observer观察者模式.observer.ObserverC;
 
 public class ObserverDemo {
 

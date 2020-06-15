@@ -1,7 +1,6 @@
-package com.结构型模式.observer观察者模式;
+package com.行为型模式.observer观察者模式;
 
-import com.结构型模式.observer观察者模式.observer.Observer;
-import com.结构型模式.observer观察者模式.observer.ObserverInterface;
+import com.行为型模式.observer观察者模式.observer.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
